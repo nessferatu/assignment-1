@@ -1,4 +1,4 @@
-# MySecondApp
+# Assignment 1 for Angular - The Complete Guide (2023 Edition)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
 
