@@ -1,0 +1,43 @@
+.home {
+  background-color: bisque;
+  text-align: center;
+  padding: 10px;
+  margin-top: 25px;
+  border: 1px solid black;
+}
+.flex-container {
+  display: flex;
+}
+.flex-item {
+  flex: 1;
+}
+.box {
+  border: 1px solid black;
+  padding-top: 2px;
+  padding-bottom: 0;
+  margin: 4px;
+  text-align: center;
+  background-color: white;
+}
+.box-blue {
+  border: 1px solid black;
+  padding: 8px;
+  margin: 4px;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+.box-red {
+  border: 1px solid black;
+  padding: 8px;
+  margin: 4px;
+  text-align: center;
+  background-color: red;
+}
+.box-green {
+  border: 1px solid black;
+  padding: 8px;
+  margin: 4px;
+  text-align: center;
+  background-color: green;
+}

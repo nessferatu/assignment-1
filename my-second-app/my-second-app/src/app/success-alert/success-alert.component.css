@@ -1,0 +1,9 @@
+@import "/Users/vanessashogreen/git/my-second-app/src/app/app.component.css";
+
+.box-green {
+  border: 1px solid black;
+  padding: 8px;
+  margin-bottom: 4px;
+  text-align: center;
+  background-color: green;
+}
