@@ -1,13 +1,20 @@
 <div class="box-blue">
-  <p>The Server Component</p>
+  <h4>Server Component</h4>
+  <p>Server is enabled? <span [innerHTML]="allowServer"></span></p>
+  <p *ngIf="!allowServer; else noServer">
+    The Server with ID {{ getServerId() }} was not detected.
+  </p>
+  <ng-template #noServer>
+    <p>The Server with ID {{ getServerId() }} is {{ getServerStatus() }}.</p>
+  </ng-template>
   <div class="flex-container">
     <div class="flex-item">
       <app-servers></app-servers>
-      <app-warning-alert></app-warning-alert>
+      <app-warning-alert [isColorOn]="allowServer"></app-warning-alert>
     </div>
     <div class="flex-item">
       <app-servers></app-servers>
-      <app-success-alert></app-success-alert>
+      <app-success-alert [isColorOn]="allowServer"></app-success-alert>
     </div>
   </div>
 </div>

@@ -1,0 +1,25 @@
+<!-- <input type="text" (input)="onTextUpdate($event)" id="input" />
+<p class="center"><b>Output:</b> {{ text }}</p> -->
+<input type="text" class="" id="input" [(ngModel)]="text" />
+<p class="center"><b>Output:</b> {{ text }}</p>
+<div
+  *ngFor="let server of servers"
+  [ngClass]="{ 'box-white': serverCount < 5, 'box-blue': serverCount >= 5 }"
+>
+  <p>
+    <b>{{ server }}</b>
+  </p>
+</div>
+<button
+  class="btn btn-primary"
+  type="button"
+  [disabled]="!text"
+  (click)="onCreateServer()"
+>
+  ADD SERVER
+</button>
+
+<button class="btn btn-primary" (click)="onToggleSecret()">
+  SECRET BUTTON
+</button>
+<div *ngIf="showSecret">I AM A SECRET ELEMENT TEEHEE</div>

@@ -1,3 +1,12 @@
-<div class="box-green flex-item">
+<div
+  *ngIf="isColorOn; else colorOff"
+  class="box-green flex-item"
+  [ngClass]="{ onlineText: isColorOn }"
+>
   <p>SuccessAlert Component</p>
 </div>
+<ng-template #colorOff>
+  <div class="box-white flex-item">
+    <p>SuccessAlert Component</p>
+  </div>
+</ng-template>

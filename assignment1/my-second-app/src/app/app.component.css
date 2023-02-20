@@ -41,3 +41,24 @@
   text-align: center;
   background-color: green;
 }
+.center {
+  margin: auto;
+  text-align: center;
+}
+.box-white {
+  border: 1px solid black;
+  padding: 8px;
+  margin: 4px;
+  text-align: center;
+  background-color: white;
+}
+
+.onlineText {
+  color: white;
+  font-weight: bold;
+}
+
+.offlineText {
+  color: black;
+  font-weight: bold;
+}
